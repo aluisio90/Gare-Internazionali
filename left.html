@@ -2,45 +2,73 @@
 	<head>
 		<style>
 		  body{
-			  position:absolute;
-			  background-color:rgba( 255,200,255,0.5);
-			  right: 20%;
-			  left:0%;
-			  height: 100%;
-			  width:30%;
+			  position:relative;
+			  background-color:white;
+			  top: 25%;
+			  left:-5%;
+			  height: auto;
+			  width:auto;
 			  font-size: 0.80cm;
 			  padding-right:1cm;
 			  border: double 10px white;
 			  display:inline;
-			  font-color:black; 
+			  
+			  
 		  }
-		  li{ color:black;
-		  border-color:black;
-		  border-style:solid;
-		  border-radius:5px;
-		  padding-top:5px;
-		  border-top:-100cm;
-		  background-color: white;
-		  border-radios: 25px;
-		  list-style:none;
-		}
+		  
 
-		  li:hover{
-			color:black;
-		  }
+
+
+			.flex-split {
+				display:flex;
+				flex-direction:row;
+				justify-content: center;
+				height: 100vh;
+			}
+
+			li{
+				background-color: #fff;
+				border: 1px solid #333;
+				border-radius: 6px;
+				color: #333;
+				display: block;
+				font-family: sans-serif;
+				margin: 10px auto;
+				max-width: 150px;
+				padding: 10px;
+				text-align: center;
+				text-decoration: none;
+
+				transition: all .6s;
+			}
+
+			li:hover{
+				background-color: #333;
+				color: #fff;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			a:hover{
+				color: black;
+			}
 		</style>	
 	</head>
 	<body>
-		<ul align= 'center'>
-		  <li> <a href= 'http://localhost/aggiungi.html' target= 'panel'>Iscrivi Atleta</a>
-			<br>
-		  <li> <a href= '#'>Squalifica</a>
-			<br>
-		  <li> <a href= '#'>Ricerca</a>
-			<br>
-		  <li> <a href= '#'>Aggiorna Dati</a>
-		  <!--utilizzare attributo target-->
-		</ul>
+		<img src= "source/logo2.jpg" width= "5" height= "5">
+		<div class="flex-slit">
+			<ul align= 'center'>
+			<li> <a href= 'http://localhost/aggiungi.html' target= 'destra'>Iscrivi Atleta</a>
+				<br>
+			<li> <a href= 'http://localhost/elimina.html'>Squalifica</a>
+				<br>
+			<li> <a href= 'http://localhost/ricerca.html'>Ricerca</a>
+				<br>
+			<li> <a href= 'http://localhost/aggiorna.html'>Aggiorna Dati</a>
+			<!--utilizzare attributo target-->
+			</ul>
+		</div>
 	 </body>
 </html>
 		
