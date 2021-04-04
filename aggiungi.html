@@ -1,0 +1,51 @@
+<script>
+	function disable(id){
+		function unlock(id){
+		document.getElementById(is).disabled = true;
+	}
+	}
+	function enable(id){
+		document.getElementById(id).disabled = false;
+	}
+	
+	function generate(str1, str2, str3){
+		
+	}
+</script>
+<html>
+	<head>
+		<title>Iscrizione</title>
+		<meta name= 'lang' value= 'it'>
+		<meta name= 'charset' value= 'utf-8'>
+		
+		<style>
+			body{
+				background-image: url('source/640.jpg');
+				
+			}
+			
+			form{
+				background-color: white;
+				border-radios: 30px;
+				font-size: 1.0cm;
+			}
+			input{ font-size: 1.0cm;}
+		</style>
+	</head>
+	<body>
+		<form action= 'registra.php' method= 'POST'><br>
+			Nome: <input type= 'text' name= 'Nome_a' id= 'nome_a'><br>
+			Cognome: <input type= 'text' name= 'Cognome_A' id= 'cognome_a'><br>
+			Data di nascita: <input type= 'data' name= 'Data_N' id= 'data_n'><br>
+			Istituto di provvenienza: <input type= 'text' name= 'Istituto' id= 'istituto'><br>
+			Nazionalita: <select name= 'Nazionalità_A' id= 'nazionalità_a'>
+				<option value= 'it'>IT</option>
+				<option value= 'de'>DE</option>
+				<option value= 'fr'>FR</option>
+				<option value= 'ing'>ING</option>
+			</select><br>
+			ID Squadra: <input type= 'text' name= 'ID_Sq' id= 'id_sq'><input type= 'radio' name= 'is_squadra' value= 'no' checked onclick= disable(id_sq)>NO <input type= 'radio' name= 'is_squadra' value= 'si'  onclick= enable(id_sq)>SI<br>
+			ID : <input type= 'text' name= 'ID_A' id= 'id_A'><button onclick= genera()>GENERA</button><br>
+		</form>
+	</body>
+</html>
