@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Iscrizione</title>
+		<meta name= 'lang' value= 'it'>
+		<meta name= 'charset' value= 'utf-8'>
+		
+		<style>
+			body{
+				background-image: url('source/640.jpg');
+				
+			}
+			
+			form{
+				background-color: white;
+				border-radius: 30px;
+				font-size: 0.5cm;
+			}
+			input{ font-size: 0.5cm;}
+
+			h1{
+				color: red;
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Registra Risultato</h1>
+		<form action= 'registra.php' method= 'POST' name= "modulo"><br>
+			ID Gara:<input type= "text" name= "ID_G"><br>
+			ID Atleta<input type= 'text' name= 'ID_A'><br>
+			Punteggio:<input type= "number" name= "Punteggio_A"><br>
+			Posizione_A<input type= "text" name= "Posizione_A"><br>
+			<button type="submit" name="invio">REGISTRA</button><button type="reset" name="clear">CANCELLA</button>
+		</form>
+	</body>
+</html>
