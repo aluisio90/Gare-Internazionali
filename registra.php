@@ -5,10 +5,13 @@
         die("ERRORE, database non disponibile");
     }
 
-    $query = "INSERT INTO VALUES("."'$_POST[ID_A]',"."'$_POST[ID_G]',"."'$_POST[Punteggio_A]',"."'$_POST[Posizione_A]');";
+    $query = "INSERT INTO PARTECIPANO_A VALUES("."'$_POST[ID_A]',"."'$_POST[ID_G]',"."'$_POST[Punteggio_A]',"."'$_POST[Posizione_A]');";
 
-    if( !$db->query($query) )
-        echo "Errore inaspettato";
+    if( !$db->query($query) ){
+        echo "Errore inaspettato<br>";
+        echo $query;
+    }
+        
     else
         echo "OK";
     
