@@ -1,17 +1,21 @@
-<script>
-	function disable(id){
-		function unlock(id){
-		document.getElementById(is).disabled = true;
-	}
-	}
-	function enable(id){
-		document.getElementById(id).disabled = false;
-	}
-	
-	function generate(str1, str2, str3){
+<script> 
+	function genera(){
+		var name = document.forms.modulo.Nome_A.value;
+		var Naz = document.forms.modulo.Nazionalità_A.value;
+		var nascita = document.forms.modulo.Data_N.value;
+
+		var code = name.charAt(2);
+		code += Naz.charAt(0);
+		code += Naz.charAt(1);
+		code += nascita.charAt(3);
+		code += nascita.charAt(4);
 		
+		var target = document.getElementById('id_A');
+		target.setAttribute('value', code);
+
 	}
 </script>
+
 <html>
 	<head>
 		<title>Iscrizione</title>
@@ -26,27 +30,33 @@
 			
 			form{
 				background-color: white;
-				border-radios: 30px;
-				font-size: 1.0cm;
+				border-radius: 30px;
+				font-size: 0.5cm;
 			}
-			input{ font-size: 1.0cm;}
+			input{ font-size: 0.5cm;}
+
+			h1{
+				color: red;
+				background-color: white;
+			}
 		</style>
 	</head>
 	<body>
 		<h1>Modulo Registrazione Atleta</h1>
-		<form action= 'aggiungi.php' method= 'POST'><br>
-			Nome: <input type= 'text' name= 'Nome_a' id= 'nome_a'><br>
+		<form action= 'aggiungi.php' method= 'POST' name= "modulo"><br>
+			Nome: <input type= 'text' name= 'Nome_A' id= 'nome_a'><br>
 			Cognome: <input type= 'text' name= 'Cognome_A' id= 'cognome_a'><br>
 			Data di nascita: <input type= 'data' name= 'Data_N' id= 'data_n'><br>
 			Istituto di provvenienza: <input type= 'text' name= 'Istituto' id= 'istituto'><br>
 			Nazionalita: <select name= 'Nazionalità_A' id= 'nazionalità_a'>
+				<option value=" "></option select= 'select'>
 				<option value= 'it'>IT</option>
 				<option value= 'de'>DE</option>
 				<option value= 'fr'>FR</option>
 				<option value= 'ing'>ING</option>
 			</select><br>
-			ID Squadra: <input type= 'text' name= 'ID_Sq' id= 'id_sq' disabled><input type= 'radio' name= 'is_squadra' value= 'no' checked onclick= disable(id_sq)>NO <input type= 'radio' name= 'is_squadra' value= 'si'  onclick= enable(id_sq)>SI<br>
-			ID : <input type= 'text' name= 'ID_A' id= 'id_A'><button onclick= genera()>GENERA</button><br>
+			ID Squadra: <input type= 'text' name= 'ID_Sq' id= 'id_sq' ><br>
+			ID : <input type= 'text' name= 'ID_A' id= 'id_A'><input type= 'button' onclick= "genera()" value="GENERA" readonly="readonly"><br>
 			<button type="submit" name="invio">REGISTRA</button><button type="reset" name="clear">CANCELLA</button>
 		</form>
 	</body>
