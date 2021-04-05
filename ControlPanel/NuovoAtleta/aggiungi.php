@@ -1,7 +1,7 @@
 <?php
-  $db = new mysqli('192.168.1.1','root', 'pass', 'GARE_INTERNAZIONALI' );
+  $db = new mysqli('localhost','root', 'pass', 'GARE_INTERNAZIONALI' );
 
-  if(!$db->connect_errno){
+  if($db->connect_errno){
     die("<h1>Connesione fallita</h1>");
   }
   if ($_POST[ID_Sq] == ''){
