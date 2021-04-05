@@ -24,12 +24,21 @@
 		</style>
 	</head>
 	<body>
-		<h1>Registra Risultato</h1>
+		<h1>Registra Risultato Atleti</h1>
 		<form action= 'registra.php' method= 'POST' name= "modulo"><br>
 			ID Gara:<input type= "text" name= "ID_G"><br>
 			ID Atleta<input type= 'text' name= 'ID_A'><br>
 			Punteggio:<input type= "number" name= "Punteggio_A"><br>
-			Posizione_A<input type= "text" name= "Posizione_A"><br>
+			Posizione Atleta<input type= "text" name= "Posizione_A"><br>
+			<button type="submit" name="invio">REGISTRA</button><button type="reset" name="clear">CANCELLA</button>
+		</form>
+
+		<h1>Registra Risultato Squadra</h1>
+		<form action='registraS.php' method='POST' name="modulo"><br>
+			ID Gara:<input type="text" name="ID_G"><br>
+			ID Squadra<input type='text' name='ID_S'><br>
+			Punteggio:<input type="number" name="Punteggio_S"><br>
+			Posizione Squadra<input type="text" name="Posizione_S"><br>
 			<button type="submit" name="invio">REGISTRA</button><button type="reset" name="clear">CANCELLA</button>
 		</form>
 	</body>
