@@ -57,7 +57,7 @@ La pagina panello di controllo rappresenta il *core* della piattaforma per mezzo
 
 |Registrazione|
 |-----|
-![Login](source/registra.png)<br><br>In questa pagina tramite l'apposito form è possibile registrarsi alla piattaforma con un account base scegliendo un username e una password che non risultino essere già state inserite.
+![Login](source/registra.png)<br><br>In questa pagina tramite l'apposito form è possibile registrarsi alla piattaforma con un account base scegliendo un username e una password che non risultino essere già state utilizzate.
 
 |Risultato Registrazione|
 |-----|
@@ -65,7 +65,7 @@ La pagina panello di controllo rappresenta il *core* della piattaforma per mezzo
 
 |Login Utente|
 |-----|
-![Login](source/returnLogin.png)<br><br>Una volta registrati se inseriti in modo coretto i dati nella pagina di login si verrà reindirizzata in questa pagina per chiedere conferma dell'operazione, data l'utente potrà visualizzare esclusivamente i risultati dei singoli atleti nelle varie gare.
+![Login](source/returnLogin.png)<br><br>Una volta registrati se inseriti in modo coretto i dati nella pagina di login si verrà reindirizzata in questa pagina per chiedere conferma dell'operazione,  l'utente potrà visualizzare esclusivamente i risultati dei singoli atleti nelle varie gare.
 
 |Login Organizzatore|
 |-----|
@@ -73,11 +73,11 @@ La pagina panello di controllo rappresenta il *core* della piattaforma per mezzo
 
 |Panello di Controllo|
 |-----|
-![Login](source/ControPanel.png)<br><br>La pagina del Panello di controllo è fondamentale per la piattaforma attraverso di essa si possono gestire la maggiorparte dei dati innerenti agli atleti o squadre parteciapanti agli eventi di gara, inoltre dal medsimo panello si potra osservare la classifica(in basso) degli atleti nelle varie gare.
+![Login](source/ControPanel.png)<br><br>La pagina del Panello di controllo è fondamentale per la piattaforma attraverso di essa si possono gestire la maggiorparte dei dati innerenti agli atleti o squadre parteciapanti agli eventi di gara, inoltre dal medesimo panello si potra osservare la classifica(in basso) degli atleti nelle varie gare.
 
 |Iscrizioni|
 |-----|
-![Login](source/New_A.png)<br><br>Nella sezione è possibile inserire nel sistema nuovi atleti o squadre che hanno preso parte alle gare inserendone le generalità in appositi form.
+![Login](source/New_A.png)<br><br>Nella sezione iscrizioni è possibile inserire nel sistema nuovi atleti o squadre che hanno preso parte alle gare inserendone le generalità in appositi form.
 
 |Squalifica|
 |-----|
@@ -89,8 +89,8 @@ La pagina panello di controllo rappresenta il *core* della piattaforma per mezzo
 
 |Aggiornamento dei dati|
 |-----|
-![Login](source/update_atleta.png)![](source/aggiorna.png)<br><br>Il pulsante aggiorna dati permette di modificare i dati relativi agli atleti che partecipano al torneo. La pagina il alto permette di selezionare i dati dell'atleta la pagina sotto invece permette di modificare i dati.
+![Login](source/update_atleta.png)![](source/aggiorna.png)<br><br>Il pulsante aggiorna dati permette di modificare i dati relativi agli atleti che partecipano al torneo. La pagina il alto permette di selezionare i dati dell'atleta la pagina in basso invece permette di modificare i dati delle squadre.
 
 |Registrare dei Risultati|
 |-----|
-![Login](source/registraResult.png)<br><br>Premendo sul pulsante *Registra Nuovo Risultato* permette di inserire i risultati di gare svolte da un singola atleta (sezione in alto) o pure da una quadra (sezione inferiore).
+![Login](source/registraResult.png)<br><br>Facendo click sul pulsante *Registra Nuovo Risultato* la piattaforma permette di inserire i risultati di gare svolte da un singola atleta (sezione in alto) o pure da una quadra (sezione inferiore).
