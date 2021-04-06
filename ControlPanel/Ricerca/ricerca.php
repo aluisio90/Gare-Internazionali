@@ -6,10 +6,11 @@
         die("Impossibile conettersi al db");
     }
 
-    $query = " SELECT * FROM ATLETI, SQUADRE, PARTECIPANO_A, PARTECIPANO_S, GARE
-               WHERE ATLETI.ID_A = PARTECIPANO_A.ID_A AND SQUADRE.ID_Sq = PARTECIPANO_S.ID_Sq AND
-               PARTECIPANO_A.ID_G = GARE.ID_G AND PARTECIPANO_S.ID_G = GARE.ID_G
-               GROUP BY GARE.Nome_G;";
+    $query = " SELECT Nome_A, Cognome_A, Nome_G, Posizione_A, Punteggio_A, ID_Sq  
+			   FROM ATLETI, GARE, PARTECIPANO_A
+			   WHERE ATLETI.ID_A = PARTECIPANO_A.ID_A AND GARE.ID_G = PARTECIPANO_A.ID_G
+			   GROUP BY Nome_G, ID_Sq
+			   ORDER BY Posizione_A, Punteggio_A;";
 
     if(! $r_query = $db->query($query))
 		die ("La query non può essere eseguita");
@@ -21,11 +22,11 @@
 		*/
 
 		echo "<table style= \"border-color: black black black black ; border-style: double;border-width:10px; \">";
-		echo "<header><td>Gara </td><td>Nome Atleta</td><td>Cognome Atleta</td><td>Posizione</td><td>Squadra di Appartenenza</td></header>";
+		echo "<header><td>Gara </td><td>Nome Atleta</td><td>Cognome Atleta</td><td>Posizione</td><td>Squadra di Appartenenza</td><td>Punteggio</td></header>";
 
 			while ($row = $r_query->fetch_assoc() ){
 				echo "<tr>";
-				echo "<td>".$row['Nome_G']."</td><td>".$row['Nome_A']."</td><td>".$row['Cognome_A']."</td><td>".$row['Posizione']."</td><td>".$row['Nome_Sq']."</td> ";
+				echo "<td>".$row['Nome_G']."</td><td>".$row['Nome_A']."</td><td>".$row['Cognome_A']."</td><td>".$row['Posizione_A']."</td><td>".$row['ID_Sq']."</td><td>".$row['Punteggio_A']."</td> ";
 
 				echo "</tr>";
 			}
