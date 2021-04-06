@@ -56,8 +56,23 @@
 				<option value= 'ing'>ING</option>
 			</select><br>
 			ID Squadra: <input type= 'text' name= 'ID_Sq' id= 'id_sq' ><br>
-			ID : <input type= 'text' name= 'ID_A' id= 'id_A'><input type= 'button' onclick= "genera()" value="GENERA" readonly="readonly"><br>
+			ID : <input type= 'text' name= 'ID_A' id= 'id_A' readonly="readonly"><input type= 'button' onclick= "genera()" value="GENERA"><br>
 			<button type="submit" name="invio">REGISTRA</button><button type="reset" name="clear">CANCELLA</button>
 		</form>
+
+		<h1>Modulo Registrazione Squadra</h1>
+		<form action='aggiungiS.php' method='POST' name="modulo"><br>
+			Nominativo Squadra: <input type='text' name='Nome_Sq' id='nome_a'><br>
+			Nazionalita: <select name='Nazionalità_Sq' id='nazionalità_Sq'>
+				<option value=" "></option select='select'>
+				<option value='it'>IT</option>
+				<option value='de'>DE</option>
+				<option value='fr'>FR</option>
+				<option value='ing'>ING</option>
+			</select><br>
+			ID : <input type='text' name='ID_Sq' id='id_sq'>
+			<button type="submit" name="invio">REGISTRA</button><button type="reset" name="clear">CANCELLA</button>
+		</form>
+		
 	</body>
 </html>
